@@ -1,0 +1,50 @@
+<ng-container >
+  
+  <div class="main-img">
+    
+  <img class="main-img" src="../../assets/image/Rectangle 30.png" alt="">
+  
+  </div>
+  <span class="title">
+    <h1 class="title-h1">აირჩიე კლინიკა რომელსაც შეგიძლია ენდო</h1>
+    <span class="box">
+      <img class="loc" src="../../assets/image/location-svgrepo-com (1) 2.png" alt="">
+      <p>იაკობ ნიკოლაძე №10</p>
+    </span>
+  </span>
+  
+</ng-container>
+<section class="wraper">
+<app-category></app-category>
+
+<div class="wraper-box">
+    <p-card id="p-card" header="" class="responsive-card" *ngFor="let item of doct.slice(0, counter)">
+      <ng-template pTemplate="header">
+        <img src="{{item.thumbnail}}" class="picture">
+      </ng-template>
+      <span class="surname">
+    <p class="f-name">{{item.first_name}}</p>
+    <p>{{item.last_name}}</p>
+          </span>
+      
+  
+     
+      
+      <span class="category">{{item.category}}</span>
+      
+<div class="card flex justify-content-center" id="star">
+  <p-rating class="star" [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating>
+</div>
+      
+  <div class="details">
+    <button class="det-btn">
+      <a (click)="bookingPage(item.id)" >Book A Visit</a>
+      </button>
+      
+  </div>
+  </p-card>
+  <button class="loadmore" (click)="loadMore()">Load more </button>
+  </div>
+</section>
+
+  

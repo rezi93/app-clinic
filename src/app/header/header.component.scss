@@ -1,0 +1,288 @@
+
+a{text-decoration: none;}
+
+.logo-box{
+    width: 90px;
+    height: 66px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+
+.auth-btn{
+    width: 232px;
+    height: 19px;
+    border: none;
+    
+   
+    cursor: pointer;
+}
+.auth{
+   color: #18A4E1;
+    
+}
+
+
+
+
+.search-block{
+    max-width: 100%;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box{
+   
+    width: 200px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 22px;
+    margin-right: 15px;
+    
+    
+}
+.mini-box{
+    width: 20px;
+    height: 20px;
+}
+.mini-text{
+    width: 122px;
+    height: 22px;
+}
+.search-inp{
+    height: 50px;
+}
+.s-inp{
+    width: 450px;
+    height: 50px;
+    margin-left:30px ;
+    
+    border-radius: 25px;
+}
+.logout{
+  width: 118px;
+  height: 32px;
+  color: #1c326f;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fdefef;
+  border-radius: 20px;
+  
+ }
+ .bi {
+  font-size: 25px;
+  
+}
+.ico{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: bottom;
+    
+}
+
+.header{
+    max-width: 100%;
+    width: 100%;
+    height: 22px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-bottom:30px;
+}
+#myLinks{
+    max-width: 100%;
+    width: 800px;
+    height: 22px;
+    display: flex;
+justify-content:space-around;
+}
+
+
+
+
+.topnav {
+    overflow: hidden;
+    
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .burger{
+    display: none;
+  }
+  
+ 
+  
+
+// responsive
+@media(max-width: 768px){
+   
+    .topnav{
+      
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+.search-block {
+  display: none;
+}
+
+  
+   .auth-btn{
+    width: 132px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+   }
+   .slash{display: none;}
+   .auth{
+    
+    margin-bottom: 7px;
+     
+ }
+   #myLinks{
+   
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+   }
+
+   
+
+   .header{
+    display: none;
+   
+  }
+  .header.active{
+    
+   
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+   .topnav a {
+    color: rgb(14, 13, 13);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .search-block.active{
+  
+    max-width: 300px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    z-index: 101;
+   
+}
+
+  .search-inp{
+    max-width: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .s-inp{
+    max-width: 230px;
+    width: 230px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .box{
+    display: none;
+  }
+  .logout{
+    width: 130px;
+    height: 45px;
+    margin-top: 35px;
+    display: flex;
+    text-align: center;
+  }
+  
+ 
+  .burger.active {
+    
+    width: 40px;
+    height: 40px;
+    
+    background: black;
+    display: block;
+    
+    cursor: pointer;
+    z-index: 100;
+   
+    
+  }
+  .bi  {
+    font-size: 28px;
+    color: rgb(11, 7, 14);
+    cursor: pointer;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .active {
+    
+    color: rgb(0, 0, 0);
+  }
+
+}
+
+@media(max-width: 480px){
+
+  .search-inp{
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
+  }
+  .s-input{
+    width: 80px;
+    height: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+}
+     

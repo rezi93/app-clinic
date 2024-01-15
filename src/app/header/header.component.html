@@ -1,0 +1,57 @@
+
+
+    <div class="topnav">
+      <a  class="burger" (click)="toggleMenu()">
+        <i class="bi bi-list"></i>
+      </a>
+      <div class="header" [class.active]="isMenuOpen ">
+      <div class="logo-box" [routerLink]="['']" routerLinkActive="router-link-active" >
+        <img class="logo" src="../../assets/image/logo.svg" alt="logo">
+        
+        
+      </div>
+      
+      <div id="myLinks">
+        <a  class="nav-item" routerLink="." routerLinkActive="active-link">HOME</a>
+        
+        <a class="nav-item" routerLink="/doccategory" routerLinkActive="active-link" >DOCTORS</a>
+        <a class="nav-item"  routerLink="/contact" routerLinkActive="active-link">CONTACT</a>
+      </div>
+      <div class="auth-btn">
+        <a class="auth" (click)="showLoginPopup()">LOG IN</a>
+        <span class="slash">/</span>
+        <a href="register">REGISTER</a>
+      </div>
+      <span class="logout">
+        <p>{{ getUserData()?.category }}</p>
+        <p (click)="logout()"><i class="bi bi-box-arrow-left"></i></p></span>
+      </div>
+      <div class="search-block" [class.active]="isMenuOpen ">
+        <span class="box">
+          
+          <img src="../../assets/image/call-svgrepo-com (3) 1.png" alt="">
+          <p>032 2 100 100</p>
+        </span>
+        <span class="box">
+          <img src="../../assets/image/location-svgrepo-com (1) 2.png" alt="">
+          <p>იაკობ ნიკოლაძე №10</p>
+        </span>
+        <div class="search-inp">
+          <input class="s-inp" type="text" placeholder="Search By Name" (keyup.enter)="searchDoctors()" [(ngModel)]="first_name">
+  
+           <input class="s-inp" type="text" placeholder="Search By Category" (keyup.enter)="searchDoctors()"  [(ngModel)]="category">
+  
+        </div>
+        
+      </div>
+   
+      
+    </div>
+    
+  
+      
+   
+  
+
+
+ 

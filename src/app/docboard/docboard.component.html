@@ -1,0 +1,30 @@
+<div class="main-box">
+    <div class="doc-box">
+        <span> <img src="{{doctorData.thumbnail}}" class="picture"></span>
+        <span class="name">
+            <p>{{doctorData.first_name}}</p>
+            <p>{{doctorData.last_name}}</p>
+        </span>
+        <p class="doc-p">{{doctorData.category}}</p>
+        <div class="card flex justify-content-center" id="star">
+          <p-rating class="star" [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating>
+        </div>
+        <p class="doc-p">{{doctorData.email}}</p>
+        <span class="change" (click)="togglePasswordForm()">Change Password</span>
+        <div class="password-change-form" *ngIf="showPasswordForm">
+          <form class="change-form" (ngSubmit)="changePassword()">
+            <input class="change-inp" type="password" name="currentPassword" [(ngModel)]="currentPassword" placeholder="Current Password" required>
+            <input class="change-inp" type="password" name="newPassword" [(ngModel)]="newPassword" placeholder="New Password" required>
+            <button class="c" type="submit">Change Password</button>
+          </form>
+        </div>
+    </div>
+    <app-calendar></app-calendar>
+    <span class="logout">
+        <p> {{ doctorData.last_name}}</p>
+        <p (click)="logout()"><i class="bi bi-box-arrow-left"></i></p>
+    </span>
+    </div>
+    
+
+

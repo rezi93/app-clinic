@@ -1,0 +1,38 @@
+<div class="container">
+  <span class="cat-box">
+    <p (click)="goback()"><i class="bi bi-arrow-left-circle"></i></p>
+    <h4>Category</h4>
+  </span>
+    
+    <div class="cat-title">
+      <p class="cat">FirstName</p>
+      <p class="cat">Category</p>
+      <p class="cat">Image</p>
+      <p class="cat">Rating</p>
+    </div>
+    <div class="main-cat"*ngFor="let item of doctors">
+    <div class="cat-Title" >
+      <span class="item">
+        <span class="name">
+          <p>{{item.first_name}}</p> 
+          <p>{{item.last_name}}</p>
+        </span>
+      </span>
+      <span class="item">
+        <p>{{item.category}}</p>
+      </span>
+      <span class="item">
+        <img src="{{item.thumbnail}}" class="picture">
+      </span>
+      <div class="card flex justify-content-center" id="star">
+        <p-rating class="star" [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating>
+      </div>
+
+    </div>
+      <span class="del-box" (click)="delDoc(item)">
+       
+        <p ><i class="bi bi-trash"></i>
+        </p>
+      </span>
+    </div>
+  </div>

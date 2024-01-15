@@ -1,0 +1,59 @@
+.admin-board{
+    max-width: 100%;
+    width: 1190px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.box{
+    width: 168px;
+    height: 32px;
+    color: #18A4E1;
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+    
+   }
+
+   
+
+.bi {
+    font-size: 25px;
+    
+}
+
+// responsive
+
+
+@media(max-width: 768px){
+
+    .admin-board{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        
+        margin: 0 auto;
+    
+    }
+    
+  
+  }
+
+@media(max-width: 480px){
+
+    .admin-board{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    
+    }
+    
+  
+  }

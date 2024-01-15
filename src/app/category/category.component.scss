@@ -1,0 +1,37 @@
+.cat-box{
+    width: 250px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+   border: 5cm;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.loadmore{
+    width: 102px;
+    height: 17px;
+    color: #18A4E1;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+// responsive
+
+@media(max-width: 768px){
+    .cat-box{
+        max-width: 200px;
+        width: 150px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+       border: 5cm;
+        margin-left: 10px;
+        font-size: 11px;
+    }
+
+}
+

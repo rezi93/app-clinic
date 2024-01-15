@@ -1,0 +1,38 @@
+<div class="container">
+    <span class="cat-box">
+      <p (click)="goback()"><i class="bi bi-arrow-left-circle"></i></p>
+      <h4>USERS</h4>
+    </span>
+      
+      <div class="cat-title">
+        <p class="cat">FirstName</p>
+        <p class="cat">LastName</p>
+        <p class="cat">Category</p>
+        <p class="cat">Id-Number</p>
+        
+      </div>
+      <div class="main-cat"*ngFor="let item of Users">
+      <div class="cat-Title" >
+        <span class="item">
+            <p>{{item.firstName}}</p> 
+          
+        </span>
+        <span class="item">
+            <p>{{item.lastName}}</p>
+        </span>
+        <span class="item">
+          <p>{{item.category}}</p>
+        </span><span class="item">
+            <p>{{item.idNumber}}</p>
+        </span>
+        
+       
+  
+      </div>
+        <span class="del-box" (click)="deluser(item)">
+         
+          <p ><i class="bi bi-trash"></i>
+          </p>
+        </span>
+      </div>
+    </div>

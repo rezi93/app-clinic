@@ -1,0 +1,68 @@
+
+
+
+
+<div class="reg-box">
+    <span>
+        <h3>Sign-Up</h3>
+    </span>
+    <div class="reg-input">
+        <form [formGroup]="registerForm" class="form" (ngSubmit)="onSubmit()">
+            <div class="valid">
+                <label>FirstName</label>
+                <input type="text" formControlName="firstName" class="inp-style" placeholder="min:5 symbol"  />
+                <div class="form-text text-danger" *ngIf="!registerForm.controls['firstName']?.valid && registerForm.controls['firstName']?.touched">
+                    <span class="error-reg">enter your name</span>
+                </div>
+            </div>
+            <div class="valid">
+                <label>LastName</label>
+                <input type="text" formControlName="lastName" class="inp-style" placeholder="" />
+                <div class="form-text text-danger" *ngIf="!registerForm.controls['lastName']?.valid && registerForm.controls['lastName']?.touched">
+                    <div class="error-reg">Last Name is required</div>
+                </div>
+            </div>
+            <div class="valid">
+                <label>Email</label>
+                <input type="text" formControlName="email" class="inp-style" placeholder="" />
+                <div class="form-text text-danger" *ngIf="!registerForm.controls['email']?.valid && registerForm.controls['email']?.touched">
+                    <div class="error-reg">Email is required</div>
+                    <div class="error-reg">Email must be a valid email address</div>
+                </div>
+            </div>
+            <div class="valid">
+                <label>Password</label>
+                <input type="password" formControlName="password" class="inp-style" placeholder="min: 8 symbol" />
+                <div class="form-text text-danger" *ngIf="!registerForm.controls['password']?.valid && registerForm.controls['password']?.touched">
+                    <div class="error-reg">Password is required</div>
+                    <div class="error-reg">Password must be at least 8 characters</div>
+                </div>
+            </div>
+            <div class="valid">
+                <label>Id-Number</label>
+                <input type="" formControlName="idnumber" class="inp-style" placeholder="" />
+                <div class="form-text text-danger" *ngIf="!registerForm.controls['idnumber']?.valid && registerForm.controls['idnumber']?.touched">
+                    <div class="error-reg">idnumber is required</div>
+                </div>
+            </div>
+            
+            
+            <div class="valid">
+                <label>Category</label>
+                <select formControlName="category" class="inp-style">
+                    <option  value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <div class="form-text text-danger" *ngIf="!registerForm.controls['category']?.valid && registerForm.controls['category']?.touched">
+                    <div>category is required</div>
+                </div>
+            </div>
+            
+            <div class="reg-click">
+            <button type="submit"   class="reg-btn" >Submit</button>
+            </div>
+        </form>
+        
+
+    </div>
+</div>

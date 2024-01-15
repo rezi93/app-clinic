@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="col-md-6 offset-md-3 mt-4">
+		<h3>Email Confirmation Page</h3>
+		<div class="email-box"  >
+			<form class="email-box" [formGroup]="myEmail" (ngSubmit)="confirmEmail()">
+			<div class="valid">
+				
+                
+                <input type="text" formControlName="email" class="inp-style" placeholder="enter email" />
+			
+            </div>
+			<button class="email-btn">confirm email</button>
+		</form>
+		</div>
+		
+	</div>

@@ -1,0 +1,23 @@
+<div class="log">
+    <button type="button" class="close-btn" (click)="close()">X</button>
+    <div class="log-box" >
+        <span class="auth-title"><h3 >LOG IN </h3></span>
+    
+    <form [formGroup]="loginform" class="log-box" (ngSubmit)="onSubmit()">
+        <span class="auth-input"><input class="auth-inp" type="email" formControlName="Email" placeholder="Email"></span>
+        <div class="form-text text-danger" *ngIf="!loginform.controls['Email']?.valid && loginform.controls['Email']?.touched">
+            <div>Email is required</div>
+            <div>Email must be a valid email address</div>
+        </div>
+        <span class="auth-input"><input class="auth-inp" type="Password" formControlName="Password" placeholder="Password"></span>
+        <div class="form-text text-danger" *ngIf="!loginform.controls['Password']?.valid && loginform.controls['Password']?.touched">
+            <div>Password is required</div>
+            <div>Password must be at least 8 characters</div>
+        </div>
+        
+        <a class="auth-a" href="forgotpassword">Forgot Password</a>
+    
+    <button class="auth-btn">Log In</button>
+    </form>
+    </div>
+</div>

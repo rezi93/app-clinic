@@ -1,0 +1,35 @@
+<section class="booki-section">
+    
+<app-category></app-category>
+        <div class="booking">
+            <div class="mt-2 mb-2">
+                <button class="btn btn-outline-primary" (click)="goback()" > <i class="bi bi-arrow-left"></i> </button>
+            </div>
+            <div class="booking-child"  *ngIf=" docdata">
+            <span class="picture">
+                <img class="picture" src="{{docdata.thumbnail}}" alt="">
+            </span>
+            <div class="doc-box">
+               
+                    <p class="f-name">{{docdata.first_name}}</p>
+                    <p>{{docdata.last_name}}</p>
+                         
+                          <span class="category">{{docdata.category}}</span>
+      
+                          <div class="card flex justify-content-center" id="star">
+                            <p-rating class="star" [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating>
+                          </div>
+            </div>
+                          <div class="desc"><p>{{docdata.descri}}</p></div>
+            
+            </div>
+            
+        </div>
+</section>
+
+<app-calendar></app-calendar>
+
+
+
+
+

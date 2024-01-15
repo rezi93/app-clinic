@@ -1,0 +1,128 @@
+:host {
+    display: block;
+  }
+  
+  .log {
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    z-index: 10;
+  }
+  .log-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .auth-input{
+   
+    display: flex;
+    flex-direction: column;
+  }
+  .auth-a{
+    margin-left: 240px;
+    color: #053354;
+    font-size: 14px;
+}
+.auth-title{
+    
+    font-size: 26px;
+    color: #18A4E1;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+  
+  
+  
+  .auth-inp {
+   width: 377px;
+   height: 48px;
+   margin-bottom: 13px;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  
+  .auth-btn {
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #053354;
+    color: white;
+    cursor: pointer;
+  }
+ 
+  .close-btn{
+    width: 28px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 90%;
+    color: black;
+   cursor: pointer;
+   border: none;
+  }
+  
+
+  // responsive
+
+  @media(max-width: 768px){
+
+    .log {
+      position: fixed;
+      top: 17%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 600px;
+      width: 400px;
+      height: auto;
+      background-color: white;
+      z-index: 10;
+    }
+
+    .auth-input{
+   
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+    .close-btn{
+      width: 22px;
+      height: 27px;
+      font-size: 18px;
+      margin-top: 5px;
+      margin-left: 90%;
+      color: black;
+     cursor: pointer;
+     border: none;
+    }
+    .auth-title{
+    
+      font-size: 20px;
+      color: #18A4E1;
+      
+      margin-bottom: 30px;
+  }
+  .auth-btn {
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #053354;
+    color: white;
+    cursor: pointer;
+  }
+
+  }

@@ -1,0 +1,113 @@
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+    margin-bottom: 250px;
+  }
+
+  .cat-title {
+    max-width: 100%;
+    width: 93%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cat-Title {
+    max-width: 100%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-cat{
+    max-width: 100%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  .del-box{
+    width: 60px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 55px;
+  }
+
+  
+
+  .item {
+    display: flex;
+    width: 130px;
+    height: 80px;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .name{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+ 
+
+  
+    .bi  {
+      font-size: 20px;
+    color: #3ACF99;
+    cursor: pointer;
+    }
+
+    .cat-box{
+      width: 220px;
+      height: 50px;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 22px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+
+    @media(max-width: 768px){
+
+      .container {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 250px;
+      }
+      .cat-title {
+        max-width: 100%;
+        width: 83%;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      
+  .cat-Title {
+    max-width: 100%;
+    width: 98%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+    
+    }
+    
+    
+  
+
+  
+
+

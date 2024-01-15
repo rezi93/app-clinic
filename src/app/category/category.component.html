@@ -1,0 +1,9 @@
+<div class="cat-box">
+  <h4>Category</h4>
+  <span class="cat-title" *ngFor="let item of doct">
+    <p (click)="selectedCategory = item.category; getlist()">{{ item.category }}</p>
+  </span>
+      
+  <button class="loadmore" (click)="loadMore()">Load More </button>
+</div>
+

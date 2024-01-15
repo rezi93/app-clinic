@@ -1,0 +1,42 @@
+.map{
+    max-width: 100%;
+    width: 1088px;
+    height: 286px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    margin-bottom: 50px;
+}
+
+.foot-box{
+    max-width: 100%;
+    width: 70%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-top: 40px;
+    
+
+}
+
+
+@media(max-width: 768px){
+
+    .foot-box{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+        margin-top: 40px;
+        
+    
+    }
+}

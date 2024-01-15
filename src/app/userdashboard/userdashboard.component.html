@@ -1,0 +1,23 @@
+<div class="main">
+  <div class="user">
+    <span class="user-box">
+      <span class="name">
+        <p>{{userData.firstName}}</p>
+        <p>{{userData.lastName}}</p>
+      </span>
+      <p class="user-p">{{userData.Idnumber}}</p>
+      <p class="user-p">{{userData.email}}</p>
+    </span>
+    <span class="change" (click)="togglePasswordForm()">Change Password</span>
+    <div class="password-change-form" *ngIf="showPasswordForm">
+      <form class="change-form" (ngSubmit)="changePassword()">
+        <input class="change-inp" type="password" name="currentPassword" [(ngModel)]="currentPassword" placeholder="Current Password" required>
+        <input class="change-inp" type="password" name="newPassword" [(ngModel)]="newPassword" placeholder="New Password" required>
+        <button class="c" type="submit">Change Password</button>
+      </form>
+    </div>
+  </div>
+  <app-calendar></app-calendar>
+  
+</div>
+
