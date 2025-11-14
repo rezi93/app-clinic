@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --configuration production --base-href /app-clinic/ && npx angular-cli-ghpages --dir=dist/clinic-page --repo=https://github.com/rezi93/app-clinic.git"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +31,8 @@
     "@fullcalendar/list": "^6.1.6",
     "@fullcalendar/timegrid": "^6.1.6",
     "angular-calendar-scheduler": "^15.0.1",
+    "angular-draggable-droppable": "^6.0.0",
+    "angular-resizable-element": "^5.0.0",
     "bootstrap-icons": "^1.10.5",
     "date-fns": "^2.29.3",
     "event-utils": "^2.1.0",
